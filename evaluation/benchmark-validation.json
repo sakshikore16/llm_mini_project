@@ -1,0 +1,90 @@
+{
+  "model": "gemini-3.5-flash-lite",
+  "runAt": "2026-11-21T08:25:27.136927+00:00",
+  "method": "Reviewed imports and dangerous calls, then ran the generated Python snippets with explicit assertions in short-lived isolated Python processes (-I -S, 3-second timeout). This is an evaluation harness, not a production sandbox.",
+  "testCount": 10,
+  "passed": 10,
+  "failedOrIncomplete": [],
+  "results": [
+    {
+      "id": "sum",
+      "status": "pass",
+      "responseMs": 2333,
+      "exitCode": 0,
+      "stdout": "All tests passed successfully!\nPASS\n",
+      "stderr": ""
+    },
+    {
+      "id": "even-odd",
+      "status": "pass",
+      "responseMs": 2721,
+      "exitCode": 0,
+      "stdout": "All tests passed successfully!\nPASS\n",
+      "stderr": ""
+    },
+    {
+      "id": "factorial",
+      "status": "pass",
+      "responseMs": 3293,
+      "exitCode": 0,
+      "stdout": "0! = 1\n5! = 120\nCaught expected error for -3: Factorial is not defined for negative numbers.\nPASS\n",
+      "stderr": ""
+    },
+    {
+      "id": "prime",
+      "status": "pass",
+      "responseMs": 6292,
+      "exitCode": 0,
+      "stdout": "Is 1 prime? False\nIs 2 prime? True\nIs 3 prime? True\nIs 4 prime? False\nIs 11 prime? True\nIs 15 prime? False\nIs 97 prime? True\nIs 100 prime? False\nPASS\n",
+      "stderr": ""
+    },
+    {
+      "id": "fibonacci",
+      "status": "pass",
+      "responseMs": 6121,
+      "exitCode": 0,
+      "stdout": "n = 0: []\nn = 1: [0]\nn = 2: [0, 1]\nn = 6: [0, 1, 1, 2, 3, 5]\nPASS\n",
+      "stderr": ""
+    },
+    {
+      "id": "palindrome",
+      "status": "pass",
+      "responseMs": 6051,
+      "exitCode": 0,
+      "stdout": "'A man, a plan, a canal: Panama' -> Palindrome? True\n'race a car' -> Palindrome? False\n'Was it a car or a cat I saw?' -> Palindrome? True\n'Hello, World!' -> Palindrome? False\nPASS\n",
+      "stderr": ""
+    },
+    {
+      "id": "vowels",
+      "status": "pass",
+      "responseMs": 10401,
+      "exitCode": 0,
+      "stdout": "Text: 'Education is the key to Success!'\nVowel count: 11\nPASS\n",
+      "stderr": ""
+    },
+    {
+      "id": "max-list",
+      "status": "pass",
+      "responseMs": 2439,
+      "exitCode": 0,
+      "stdout": "The largest in [3, 14, 1, 7, 9, 12] is: 14\nThe largest in [-5, -2, -19, -1] is: -1\nCaught expected error: The list is empty. Cannot find the largest number.\nPASS\n",
+      "stderr": ""
+    },
+    {
+      "id": "fizzbuzz",
+      "status": "pass",
+      "responseMs": 2700,
+      "exitCode": 0,
+      "stdout": "['1', '2', 'Fizz', '4', 'Buzz', 'Fizz', '7', '8', 'Fizz', 'Buzz', '11', 'Fizz', '13', '14', 'FizzBuzz']\nPASS\n",
+      "stderr": ""
+    },
+    {
+      "id": "word-count",
+      "status": "pass",
+      "responseMs": 9341,
+      "exitCode": 0,
+      "stdout": "Word Counts: {'learn': 2, 'python': 2, 'coding': 1, 'is': 2, 'fun': 1, 'it': 1}\nPASS\n",
+      "stderr": ""
+    }
+  ]
+}
